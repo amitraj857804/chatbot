@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  cursor:pointer;
 }
 
 .suggestion-list .suggestion:hover {
