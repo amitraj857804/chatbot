@@ -9,8 +9,10 @@ const closeChatbot = document.querySelector("#close-chatbot");
 const clearChat = document.querySelector("#clear-chat");
 const suggestions = document.querySelectorAll(".suggestion");
 
+require('dotenv').config();
+
 //API setup
-const API_KEY = `AIzaSyBXQd4YE2GBSgWsAaW9nnhLp7tWJua3udQ`;
+const API_KEY = process.env.API_KEY;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 //user data message
